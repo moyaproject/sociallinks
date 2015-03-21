@@ -56,7 +56,7 @@
 .moya-sociallinks-link .vote
 {
     background-position:-1px 22px;
-    background-image:url(/static/sociallinks-media/images/arrows.png);
+    /*background-image:url(/static/sociallinks-media/images/arrows.png);*/
     width:22px;
     height:18px;
     cursor:pointer;

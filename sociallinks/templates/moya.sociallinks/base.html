@@ -1,5 +1,18 @@
 {% extends "/base.html" %}
 
+{% block "css" append %}
+<style>
+.moya-sociallinks-link .vote
+{
+    background-position:-1px 22px;
+    background-image:url({% media "images/arrows.png" %});
+    width:22px;
+    height:18px;
+    cursor:pointer;
+}
+</style>
+{% endblock %}
+
 {% block "body" %}
 {% render sections.body %}
 {% endblock %}

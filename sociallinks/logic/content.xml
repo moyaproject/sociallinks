@@ -38,7 +38,7 @@
         <section name="side">
             <node template="blurb.html" />
             <node template="new_topic_link.html"
-                if="permission:.app.settings.new_topic_permission"/>
+                if=".user and permission:.app.settings.new_topic_permission"/>
         </section>
     </content>
 
@@ -53,7 +53,7 @@
         <section name="side">
             <node template="topics_side.html" />
             <node template="new_topic_link.html"
-                if="permission:.app.settings_new_topic_permission"/>
+                if=".user and permission:.app.settings_new_topic_permission"/>
         </section>
     </content>
 
@@ -65,8 +65,7 @@
                 <node template="links.html" withscope="yes"/>
             </w:paginate>
         </section>
-        <section name="side">
-            <node template="blurb.html" />
+        <section name="side" merge="replace">
             <node template="topic_description.html" withscope="yes" />
         </section>
         <section name="admin_links" if="permission:'admin'">

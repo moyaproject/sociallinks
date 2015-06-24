@@ -4,9 +4,9 @@
       xmlns:db="http://moyaproject.com/db">
 
     <enum libname="enum.jsonrpc.errors">
-        <value id="1" label="not_logged_in" description="You must be logged in to do that" />
-     	<value label="invalid_score" description="Score must be -1, 0 or +1"/>
-     	<value label="unknown_link" description="Link object was not found"/>
+        <value id="1" name="not_logged_in" description="You must be logged in to do that" />
+     	<value name="invalid_score" description="Score must be -1, 0 or +1"/>
+     	<value name="unknown_link" description="Link object was not found"/>
     </enum>
 
     <rpc:interface libname="jsonrpc" errors="#enum.jsonrpc.errors">
